@@ -22,13 +22,6 @@ module.exports = (sequelize, DataTypes) => {
     state: DataTypes.STRING,
     country: DataTypes.STRING,
     zip: DataTypes.STRING,
-    amount: DataTypes.DECIMAL,
-    transaction: DataTypes.STRING,
-    callbackUrl: DataTypes.STRING,
-    successUrl: DataTypes.STRING,
-    failedUrl: DataTypes.STRING,
-    status: DataTypes.STRING,
-    hash: DataTypes.STRING,
   }, {
     sequelize,
     modelName: 'Todos',
