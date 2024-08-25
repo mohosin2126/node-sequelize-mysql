@@ -3,11 +3,9 @@ const app = express()
 const port = 3000
 const cors=require('cors')
 
-// middleware
-app.use(express.json())
+const apiRoutes=require("./src/routes/index")
 
-
-
+app.use("/api",apiRoutes)
 
 
 // testing api 
